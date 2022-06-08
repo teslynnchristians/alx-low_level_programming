@@ -1,5 +1,9 @@
+<<<<<<< HEAD
  #include "main.h"
 
+=======
+#include "main.h"
+>>>>>>> b4b66e3281f778df83b37bf8318da05d2fb59ea8
 /**
  * print_sign - prints the sign of a numver
  *
@@ -13,6 +17,7 @@
  */
 int print_sign(int n)
 {
+<<<<<<< HEAD
 if (n > 0)
 {
 _putchar('+');
@@ -28,4 +33,21 @@ else if (n < 0)
 _putchar('-');
 }
 return (-1);
+=======
+	if (n > 0)
+	{
+		_putchar('+');
+		return (1);
+	}
+	else if (n == 0)
+	{
+		_putchar(48);
+		return (0);
+	}
+	else if (n < 0)
+	{
+		_putchar('-');
+	}
+	return (-1);
+>>>>>>> b4b66e3281f778df83b37bf8318da05d2fb59ea8
 }

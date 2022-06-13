@@ -1,34 +1,18 @@
 /**
- * print_rev - Prints a string in reverse, with a new line
- *
- * @s: The string to reverse
- *
- * Return: nothing
+ * print_rev - a function that prints a string, in reverse,
+ * followed by a new line.
+ * @s: an input string
+ * Return: Nothing
  */
 void print_rev(char *s)
 {
-int len = _strlen(s) - 1;
+int len = 0;
 
-while (len >= 0)
-{
-_putchar(s[len]);
-len--;
-}
+while (s[len] != '\0')
+len++;
+
+while (len)
+_putchar(s[--len]);
+
 _putchar('\n');
-}
-/**
- * _strlen - returns the length of a string
- *
- * @s: the string whose length to return
- *
- * Return: the length of the string
- */
-int _strlen(char *s)
-{
-int i = 0;
-
-while (s[i] != '\0')
-i++;
-
-return (i);
 }

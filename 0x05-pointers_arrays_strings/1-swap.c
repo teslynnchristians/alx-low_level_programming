@@ -1,13 +1,14 @@
 /**
- * _strlen -  a function that returns the length of a string.
- * @s: An input string
+ * swap_int -  a function that swaps the values of two integers.
+ * @a: an inout integer pointer
+ * @b: an input integer pointer
  * Return: Nothing
  */
-int _strlen(char *s)
+void swap_int(int *a, int *b)
 {
-int len = 0;
+int aux;
 
-while (s[len] != '\0')
-len++;
-return (len);
+aux = *a;
+*a = *b;
+*b = aux;
 }

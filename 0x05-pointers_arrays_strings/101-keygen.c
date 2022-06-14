@@ -11,7 +11,11 @@
 char *_strcpy(char *dest, char *src)
 {
 char *aux = dest;
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> Don't hate the hacker, hate the code
 while (*src)
 *dest++ = *src++;
 return (aux);

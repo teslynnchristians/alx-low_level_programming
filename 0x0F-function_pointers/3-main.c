@@ -7,13 +7,14 @@
  *
  * Return: Always 0.
  */
+
 int main(int argc, char *argv[])
 {
 int a, b;
 int (*operation)(int, int);
 
 if (argc != 4)
-{	
+{
 printf("Error\n");
 exit(98);
 }

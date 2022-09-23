@@ -3,7 +3,7 @@ i**
  * hash_table_create - create a hash table
  * @size: Table size
  * Return: succes
- */
+  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
 hash_table_t *table;
